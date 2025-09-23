@@ -1,7 +1,12 @@
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <>
-      <h2>Bangladesh</h2>
+      <div className="w-11/12 mx-auto">
+        {/* Navbar */}
+        <Navbar></Navbar>
+      </div>
     </>
   );
 }
