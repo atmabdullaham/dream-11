@@ -1,5 +1,5 @@
 import logo from "../assets/logo.png";
-const Navbar = () => {
+const Navbar = ({ avaliableTaka }) => {
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -64,7 +64,7 @@ const Navbar = () => {
           </li>
         </ul>
         <a className="btn">
-          <span>60000000</span>Coins
+          <span>{avaliableTaka}</span>Coins
         </a>
       </div>
     </div>

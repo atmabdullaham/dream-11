@@ -7,17 +7,26 @@ const fetchPlayers = async () => {
 
   return res.json();
 };
+const playersPromise = fetchPlayers();
 
 function App() {
   const [toggle, setToggle] = useState(true);
-  const playersPromise = fetchPlayers();
+  const [avaliableTaka, setAvabilableTaka] = useState(600000000);
+
   return (
     <>
       <div className="w-10/12 mx-auto">
         {/* Navbar */}
-        <Navbar></Navbar>
+        <Navbar avaliableTaka={avaliableTaka}></Navbar>
         <div className="flex justify-between items-center py-4">
-          <h1 className="text-2xl font-bold">Available Player</h1>
+          {toggle ? (
+            <h1 className="text-2xl font-bold">Available Players</h1>
+          ) : (
+            <h1 className="text-2xl font-bold">
+              Selected Players <span>(0/6)</span>
+            </h1>
+          )}
+
           <div>
             <button
               onClick={() => setToggle(true)}
@@ -39,7 +48,11 @@ function App() {
         </div>
         {toggle === true ? (
           <Suspense fallback={<div>Loading...</div>}>
-            <AvailablePlayers playersPromise={playersPromise} />
+            <AvailablePlayers
+              setAvabilableTaka={setAvabilableTaka}
+              avaliableTaka={avaliableTaka}
+              playersPromise={playersPromise}
+            />
           </Suspense>
         ) : (
           <SelectedPlayers />

@@ -1,4 +1,8 @@
-const AvailablePlayer = ({ player }) => {
+import { useState } from "react";
+
+const AvailablePlayer = ({ player, setAvabilableTaka, avaliableTaka }) => {
+  const [isSelected, setIsSelected] = useState(false);
+  const handlePlayerSelect = (price) => {};
   const {
     img,
     name,
@@ -44,11 +48,25 @@ const AvailablePlayer = ({ player }) => {
             </h4>
             <button className="text-gray-500">{bowling_style}</button>
           </div>
-          <div className="card-actions justify-between items-center pt-4 items-center">
+          <div className="card-actions justify-between items-center pt-4">
             <h4 className="text-base text-gray-500 font-semibold">
               Price: <span>{price}</span>
             </h4>
-            <button className="btn btn-accent text-white">Choose Player</button>
+            <button
+              onClick={() => {
+                if (avaliableTaka >= parseInt(price)) {
+                  setAvabilableTaka(avaliableTaka - parseInt(price));
+                  setIsSelected(true);
+                } else {
+                  alert("You don't have enough coins");
+                }
+              }}
+              className={`btn btn-accent text-white ${
+                isSelected && "btn-disabled"
+              }`}
+            >
+              {!isSelected ? "Choose Player" : "Selected"}
+            </button>
           </div>
         </div>
       </div>
