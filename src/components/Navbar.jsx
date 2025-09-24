@@ -64,7 +64,7 @@ const Navbar = () => {
           </li>
         </ul>
         <a className="btn">
-          <span>0</span>Coin
+          <span>60000000</span>Coins
         </a>
       </div>
     </div>

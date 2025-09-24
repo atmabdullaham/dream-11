@@ -1,0 +1,74 @@
+[
+  {
+    "img": "https://static01.nyt.com/athletic/uploads/wp/2025/05/10092152/virat-kohli-scaled-e1746883367691-1024x681.jpg?width=1000&quality=70&auto=webp",
+    "name": "Virat Kohli",
+    "country": "India",
+    "role": "Batsman",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "Right-arm Off-Spin",
+    "price": 150000000,
+    "rating": 8.5
+  },
+  {
+    "img": "https://static.independent.co.uk/2025/05/15/19/b68664e849b637ad35aeebbd09415e71Y29udGVudHNlYXJjaGFwaSwxNzQ3NDA0NDg4-2.79745067.jpg",
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "All-Rounder",
+    "batting_style": "Left-Hand Bat",
+    "bowling_style": "Right-arm Fast-Medium",
+    "price": 120000000,
+    "rating": 7.9
+  },
+
+  {
+    "img": "https://c.cricketpakistan.com.pk/images/posts/cover_1744474267FotoJet-(4).jpg",
+    "name": "Mohammad Rizwan",
+    "country": "Pakistan",
+    "role": "Wicketkeeper-Batsman",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "N/A",
+    "price": 100000000,
+    "rating": 8.1
+  },
+  {
+    "img": "https://c.ndtvimg.com/2025-01/779p0q78_steve-smith-afp_625x300_29_January_25.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738",
+    "name": "Steve Smith",
+    "country": "Australia",
+    "role": "Batsman",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "N/A",
+    "price": 160000000,
+    "rating": 9.2
+  },
+  {
+    "img": "https://www.wisden.com/static-assets/waf-images/44/0e/c4/4-3/168653_GettyImages-1258137702-scaled-e1596014535938.jpg?v=23.07&w=1024",
+    "name": "Curtis Campher",
+    "country": "Ireland",
+    "role": "All-Rounder",
+    "batting_style": "Left-Hand Bat",
+    "bowling_style": "Left-arm Fast",
+    "price": 110000000,
+    "rating": 7.5
+  },
+  {
+    "img": "https://i.pinimg.com/736x/ff/69/7a/ff697a4f2b346f9aeb37750201641178.jpg",
+    "name": "Sabaorish Ravichandran",
+    "country": "Japan",
+    "role": "Bowler",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "Right-arm Leg-Spin",
+    "price": 90000000,
+    "rating": 7.1
+  },
+
+  {
+    "img": "https://i0.wp.com/crictoday.com/wp-content/uploads/2023/02/rashid-khan-resigns-as-afghanistan-captain-for-t20-world-cup-with-immediate-effect-3.webp?fit=1200%2C675&ssl=1",
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Batsman",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "N/A",
+    "price": 115000000,
+    "rating": 8.6
+  }
+]
