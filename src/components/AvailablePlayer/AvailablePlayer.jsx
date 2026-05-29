@@ -1,8 +1,14 @@
 import { useState } from "react";
 
-const AvailablePlayer = ({ player, setAvabilableTaka, avaliableTaka }) => {
+const AvailablePlayer = ({
+  player,
+  setAvabilableTaka,
+  avaliableTaka,
+  selectedPlayers,
+  setSelectedPlayers,
+}) => {
   const [isSelected, setIsSelected] = useState(false);
-  const handlePlayerSelect = (price) => {};
+
   const {
     img,
     name,

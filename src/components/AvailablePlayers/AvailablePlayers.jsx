@@ -5,6 +5,8 @@ const AvailablePlayers = ({
   playersPromise,
   setAvabilableTaka,
   avaliableTaka,
+  selectedPlayers,
+  setSelectedPlayers,
 }) => {
   const players = use(playersPromise);
   console.log(players);
@@ -17,6 +19,8 @@ const AvailablePlayers = ({
           player={player}
           setAvabilableTaka={setAvabilableTaka}
           avaliableTaka={avaliableTaka}
+          selectedPlayers={selectedPlayers}
+          setSelectedPlayers={setSelectedPlayers}
         ></AvailablePlayer>
       ))}
     </div>

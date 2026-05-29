@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+
 const Navbar = ({ avaliableTaka }) => {
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -26,32 +28,30 @@ const Navbar = ({ avaliableTaka }) => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <a>Fixture</a>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Teams</a>
+            </li>
+            <li>
+              <a>Schedules</a>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
-        <a className="text-xl">
-          <img src={logo} className="w-10" alt="" />
-        </a>
+        <Link to="/" className="text-xl">
+          <img src={logo} className="w-10" alt="Logo" />
+        </Link>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <a>Fixture</a>
@@ -61,6 +61,9 @@ const Navbar = ({ avaliableTaka }) => {
           </li>
           <li>
             <a>Schedules</a>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         <a className="btn">
