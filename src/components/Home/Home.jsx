@@ -1,6 +1,6 @@
 import { Suspense, useState } from "react";
-import AvailablePlayers from "./AvailablePlayers/AvailablePlayers";
-import SelectedPlayers from "./SelectedPlayers/SelectedPlayers";
+import AvailablePlayers from "../AvailablePlayers/AvailablePlayers";
+import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
 const fetchPlayers = async () => {
   const res = await fetch("/players.json");
