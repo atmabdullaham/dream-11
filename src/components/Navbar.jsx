@@ -40,6 +40,9 @@ const Navbar = ({ avaliableTaka }) => {
               <a>Schedules</a>
             </li>
             <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
@@ -61,6 +64,9 @@ const Navbar = ({ avaliableTaka }) => {
           </li>
           <li>
             <a>Schedules</a>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
