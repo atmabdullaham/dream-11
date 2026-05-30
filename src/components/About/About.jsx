@@ -68,6 +68,41 @@ const About = () => {
     },
   ];
 
+  const testimonials = [
+    {
+      name: "Rajesh Kumar",
+      location: "Mumbai, India",
+      image: "🏏",
+      rating: 5,
+      quote:
+        "Dream 11 has transformed how I engage with cricket. The real-time updates and analytics help me make better team selections. Highly addictive and rewarding!",
+    },
+    {
+      name: "Priya Singh",
+      location: "Delhi, India",
+      image: "⭐",
+      rating: 5,
+      quote:
+        "Best fantasy cricket platform out there. The contests are fair, payouts are quick, and the user interface is very intuitive. I've been playing for 2 years now!",
+    },
+    {
+      name: "Arjun Patel",
+      location: "Bangalore, India",
+      image: "🎯",
+      rating: 5,
+      quote:
+        "The analytics and expert insights available on Dream 11 are game-changing. I went from casual player to consistent winner. Absolutely love the platform!",
+    },
+    {
+      name: "Neha Chopra",
+      location: "Pune, India",
+      image: "🌟",
+      rating: 5,
+      quote:
+        "Dream 11 makes cricket more exciting and engaging. The variety of contests ensures there's something for everyone. Great community and excellent support!",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -198,6 +233,45 @@ const About = () => {
               to continuing our journey of bringing cricket fans closer to the
               sport they love.
             </p>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="mb-20">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+            What Our Players Say
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {testimonials.map((testimonial, idx) => (
+              <div
+                key={idx}
+                className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow border-l-4 border-[#E7FE29]"
+              >
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-4">
+                    <div className="text-5xl">{testimonial.image}</div>
+                    <div>
+                      <h4 className="font-bold text-gray-900">
+                        {testimonial.name}
+                      </h4>
+                      <p className="text-sm text-gray-600">
+                        {testimonial.location}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex gap-1 mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i} className="text-yellow-400 text-lg">
+                      ★
+                    </span>
+                  ))}
+                </div>
+                <p className="text-gray-700 italic leading-relaxed">
+                  "{testimonial.quote}"
+                </p>
+              </div>
+            ))}
           </div>
         </section>
 
