@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "img": "https://static01.nyt.com/athletic/uploads/wp/2025/05/10092152/virat-kohli-scaled-e1746883367691-1024x681.jpg?width=1000&quality=70&auto=webp",
     "name": "Virat Kohli",
     "country": "India",
@@ -7,30 +8,38 @@
     "batting_style": "Right-Hand Bat",
     "bowling_style": "Right-arm Off-Spin",
     "price": 150000000,
-    "rating": 8.5
+    "rating": 9.2,
+    "matches": 287,
+    "runs": 12000
   },
   {
+    "id": 2,
     "img": "https://static.independent.co.uk/2025/05/15/19/b68664e849b637ad35aeebbd09415e71Y29udGVudHNlYXJjaGFwaSwxNzQ3NDA0NDg4-2.79745067.jpg",
     "name": "Ben Stokes",
     "country": "England",
     "role": "All-Rounder",
     "batting_style": "Left-Hand Bat",
     "bowling_style": "Right-arm Fast-Medium",
-    "price": 120000000,
-    "rating": 7.9
+    "price": 135000000,
+    "rating": 8.8,
+    "matches": 199,
+    "runs": 8500
   },
-
   {
+    "id": 3,
     "img": "https://c.cricketpakistan.com.pk/images/posts/cover_1744474267FotoJet-(4).jpg",
     "name": "Mohammad Rizwan",
     "country": "Pakistan",
     "role": "Wicketkeeper-Batsman",
     "batting_style": "Right-Hand Bat",
     "bowling_style": "N/A",
-    "price": 100000000,
-    "rating": 8.1
+    "price": 125000000,
+    "rating": 8.7,
+    "matches": 156,
+    "runs": 7200
   },
   {
+    "id": 4,
     "img": "https://c.ndtvimg.com/2025-01/779p0q78_steve-smith-afp_625x300_29_January_25.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738",
     "name": "Steve Smith",
     "country": "Australia",
@@ -38,9 +47,12 @@
     "batting_style": "Right-Hand Bat",
     "bowling_style": "N/A",
     "price": 160000000,
-    "rating": 9.2
+    "rating": 9.4,
+    "matches": 267,
+    "runs": 11800
   },
   {
+    "id": 5,
     "img": "https://www.wisden.com/static-assets/waf-images/44/0e/c4/4-3/168653_GettyImages-1258137702-scaled-e1596014535938.jpg?v=23.07&w=1024",
     "name": "Curtis Campher",
     "country": "Ireland",
@@ -48,27 +60,203 @@
     "batting_style": "Left-Hand Bat",
     "bowling_style": "Left-arm Fast",
     "price": 110000000,
-    "rating": 7.5
+    "rating": 7.8,
+    "matches": 89,
+    "runs": 3500
   },
   {
+    "id": 6,
     "img": "https://i.pinimg.com/736x/ff/69/7a/ff697a4f2b346f9aeb37750201641178.jpg",
-    "name": "Sabaorish Ravichandran",
-    "country": "Japan",
+    "name": "Yuzvendra Chahal",
+    "country": "India",
     "role": "Bowler",
     "batting_style": "Right-Hand Bat",
     "bowling_style": "Right-arm Leg-Spin",
-    "price": 90000000,
-    "rating": 7.1
+    "price": 95000000,
+    "rating": 8.1,
+    "matches": 178,
+    "wickets": 198
   },
-
   {
+    "id": 7,
     "img": "https://i0.wp.com/crictoday.com/wp-content/uploads/2023/02/rashid-khan-resigns-as-afghanistan-captain-for-t20-world-cup-with-immediate-effect-3.webp?fit=1200%2C675&ssl=1",
     "name": "Rashid Khan",
     "country": "Afghanistan",
+    "role": "Bowler",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "Right-arm Leg-Spin",
+    "price": 130000000,
+    "rating": 9.0,
+    "matches": 142,
+    "wickets": 185
+  },
+  {
+    "id": 8,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/10/MS-Dhoni.jpg",
+    "name": "MS Dhoni",
+    "country": "India",
+    "role": "Wicketkeeper-Batsman",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "N/A",
+    "price": 140000000,
+    "rating": 8.9,
+    "matches": 298,
+    "runs": 10700
+  },
+  {
+    "id": 9,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2021/10/Jasprit-Bumrah.jpg",
+    "name": "Jasprit Bumrah",
+    "country": "India",
+    "role": "Bowler",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "Right-arm Fast",
+    "price": 115000000,
+    "rating": 9.1,
+    "matches": 112,
+    "wickets": 142
+  },
+  {
+    "id": 10,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/08/Aaron-Finch.jpg",
+    "name": "Aaron Finch",
+    "country": "Australia",
     "role": "Batsman",
     "batting_style": "Right-Hand Bat",
     "bowling_style": "N/A",
-    "price": 115000000,
-    "rating": 8.6
+    "price": 108000000,
+    "rating": 7.6,
+    "matches": 145,
+    "runs": 5300
+  },
+  {
+    "id": 11,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/10/Pat-Cummins.jpg",
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "role": "Bowler",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "Right-arm Fast",
+    "price": 112000000,
+    "rating": 8.4,
+    "matches": 98,
+    "wickets": 128
+  },
+  {
+    "id": 12,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/09/Babar-Azam.jpg",
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "N/A",
+    "price": 138000000,
+    "rating": 8.8,
+    "matches": 178,
+    "runs": 8900
+  },
+  {
+    "id": 13,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/08/Shaheen-Afridi.jpg",
+    "name": "Shaheen Afridi",
+    "country": "Pakistan",
+    "role": "Bowler",
+    "batting_style": "Left-Hand Bat",
+    "bowling_style": "Left-arm Fast",
+    "price": 122000000,
+    "rating": 8.6,
+    "matches": 76,
+    "wickets": 98
+  },
+  {
+    "id": 14,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/09/KL-Rahul.jpg",
+    "name": "KL Rahul",
+    "country": "India",
+    "role": "Wicketkeeper-Batsman",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "N/A",
+    "price": 105000000,
+    "rating": 8.0,
+    "matches": 134,
+    "runs": 5600
+  },
+  {
+    "id": 15,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/10/Rohit-Sharma.jpg",
+    "name": "Rohit Sharma",
+    "country": "India",
+    "role": "Batsman",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "Right-arm Off-Spin",
+    "price": 148000000,
+    "rating": 9.1,
+    "matches": 256,
+    "runs": 11200
+  },
+  {
+    "id": 16,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/11/David-Warner.jpg",
+    "name": "David Warner",
+    "country": "Australia",
+    "role": "Batsman",
+    "batting_style": "Left-Hand Bat",
+    "bowling_style": "N/A",
+    "price": 132000000,
+    "rating": 8.5,
+    "matches": 219,
+    "runs": 9200
+  },
+  {
+    "id": 17,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/09/Suryakumar-Yadav.jpg",
+    "name": "Suryakumar Yadav",
+    "country": "India",
+    "role": "Batsman",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "N/A",
+    "price": 98000000,
+    "rating": 8.2,
+    "matches": 89,
+    "runs": 4100
+  },
+  {
+    "id": 18,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/10/Hardik-Pandya.jpg",
+    "name": "Hardik Pandya",
+    "country": "India",
+    "role": "All-Rounder",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "Right-arm Fast-Medium",
+    "price": 125000000,
+    "rating": 8.3,
+    "matches": 134,
+    "runs": 4200
+  },
+  {
+    "id": 19,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/08/Virat-Kohli-Net.jpg",
+    "name": "Reece Topley",
+    "country": "England",
+    "role": "Bowler",
+    "batting_style": "Left-Hand Bat",
+    "bowling_style": "Left-arm Fast",
+    "price": 92000000,
+    "rating": 7.9,
+    "matches": 68,
+    "wickets": 82
+  },
+  {
+    "id": 20,
+    "img": "https://images.cricketcountry.com/wp-content/uploads/2023/09/Joe-Root.jpg",
+    "name": "Joe Root",
+    "country": "England",
+    "role": "Batsman",
+    "batting_style": "Right-Hand Bat",
+    "bowling_style": "Right-arm Off-Spin",
+    "price": 118000000,
+    "rating": 8.4,
+    "matches": 187,
+    "runs": 7800
   }
 ]
