@@ -43,6 +43,9 @@ const Navbar = ({ avaliableTaka }) => {
               <Link to="/about">About</Link>
             </li>
             <li>
+              <Link to="/feedback">Feedback</Link>
+            </li>
+            <li>
               <Link to="/contact">Contact</Link>
             </li>
           </ul>
@@ -67,6 +70,9 @@ const Navbar = ({ avaliableTaka }) => {
           </li>
           <li>
             <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/feedback">Feedback</Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
