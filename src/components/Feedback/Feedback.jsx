@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Feedback = () => {
   const [form, setForm] = useState({
@@ -8,6 +8,12 @@ const Feedback = () => {
     message: "",
   });
   const [saved, setSaved] = useState(false);
+  const [feedbacks, setFeedbacks] = useState([]);
+
+  useEffect(() => {
+    const all = JSON.parse(localStorage.getItem("demo_feedback") || "[]");
+    setFeedbacks(all);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,7 +28,13 @@ const Feedback = () => {
     localStorage.setItem("demo_feedback", JSON.stringify(all));
     setSaved(true);
     setForm({ name: "", email: "", rating: 5, message: "" });
+    setFeedbacks(all);
     setTimeout(() => setSaved(false), 3000);
+  };
+
+  const clearFeedbacks = () => {
+    localStorage.removeItem("demo_feedback");
+    setFeedbacks([]);
   };
 
   return (
@@ -112,6 +124,47 @@ const Feedback = () => {
             </div>
           </form>
         </div>
+      </div>
+      {/* Recent Feedbacks */}
+      <div className="max-w-3xl mx-auto mt-8">
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-xl font-bold">Recent Feedback</h3>
+          <button onClick={clearFeedbacks} className="text-sm text-red-600">
+            Clear All
+          </button>
+        </div>
+        {feedbacks.length === 0 ? (
+          <p className="text-gray-500">No feedback yet.</p>
+        ) : (
+          <div className="space-y-4">
+            {feedbacks.map((fb, i) => (
+              <div
+                key={i}
+                className="p-4 bg-white rounded-lg shadow-sm border-l-4 border-[#E7FE29]"
+              >
+                <div className="flex items-start justify-between">
+                  <div>
+                    <div className="font-semibold text-gray-900">
+                      {fb.name || "Anonymous"}
+                    </div>
+                    <div className="text-sm text-gray-500">{fb.email}</div>
+                  </div>
+                  <div className="text-sm text-gray-700">
+                    {new Date(fb.date).toLocaleString()}
+                  </div>
+                </div>
+                <div className="mt-2">
+                  <div className="text-yellow-500 mb-2">
+                    {Array.from({ length: fb.rating }).map((_, idx) => (
+                      <span key={idx}>★</span>
+                    ))}
+                  </div>
+                  <p className="text-gray-700">{fb.message}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
